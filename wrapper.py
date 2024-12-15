@@ -12,6 +12,7 @@ import torchaudio
 import torchaudio.transforms as T
 import collections
 import random
+from tqdm import trange
 
 class PengiWrapper():
     """
@@ -89,7 +90,8 @@ class PengiWrapper():
         )
         model.enc_text_len = args.dataset_config['enc_text_len']
         model.dec_text_len = args.dataset_config['dec_text_len']
-        model_state_dict = torch.load(self.model_path, map_location=torch.device('cpu'))['model']
+        device = torch.device('cuda' if self.use_cuda and torch.cuda.is_available() else 'cpu')
+        model_state_dict = torch.load(self.model_path, map_location=device)['model']
         try:
             model.load_state_dict(model_state_dict)
         except:
@@ -109,7 +111,7 @@ class PengiWrapper():
 
         if self.use_cuda and torch.cuda.is_available():
             model = model.cuda()
-        
+
         return model, enc_tokenizer, dec_tokenizer, args
 
     def default_collate(self, batch):
@@ -208,14 +210,14 @@ class PengiWrapper():
                     ttext = ttext + ' <|endoftext|>' if 'gpt' in self.args.text_model else ttext
                 tok = tokenizer.encode_plus(
                             text=ttext, add_special_tokens=True,\
-                            max_length=self.model.enc_text_len, 
+                            max_length=self.model.enc_text_len,
                             pad_to_max_length=True, return_tensors="pt")
-                
+
             for key in tok.keys():
                 tok[key] = tok[key].reshape(-1).cuda() if self.use_cuda and torch.cuda.is_available() else tok[key].reshape(-1)
             tokenized_texts.append(tok)
         return self.default_collate(tokenized_texts)
-    
+
     def _get_audio_embeddings(self, preprocessed_audio):
         r"""Load preprocessed audio and return a audio embeddings"""
         with torch.no_grad():
@@ -240,19 +242,19 @@ class PengiWrapper():
             else:
                 prompts_embed = self.model.caption_decoder.gpt.transformer.wte(preprocessed_prompts['input_ids'])
         return prompts_embed
-    
+
     def _get_prompts_prefix(self, prompts_embed):
         r"""Produces prompt prefix which is fed to LM"""
         with torch.no_grad():
             prompts_prefix = self.model.caption_decoder.text_project(prompts_embed).contiguous().view(-1, self.model.caption_decoder.prefix_length, self.model.caption_decoder.gpt_embedding_size)
         return prompts_prefix
-    
+
     def _get_decoder_embeddings(self, preprocessed_text):
         r"""Load additional text and return a additional text embeddings"""
         with torch.no_grad():
             decoder_embed = self.model.caption_decoder.gpt.transformer.wte(preprocessed_text['input_ids'])
         return decoder_embed
-    
+
     def _generate_beam(self, beam_size: int = 5, embed=None,
                   entry_length=67, temperature=1., stop_token: str = ' <|endoftext|>'):
         r"""Produces text conditioned embeddings using beam search"""
@@ -306,7 +308,7 @@ class PengiWrapper():
         order = scores.argsort(descending=True)
         output_texts = [output_texts[i] for i in order]
         return output_texts, scores
-    
+
     def get_audio_embeddings(self, audio_paths, resample=True):
         r"""Load list of audio files and return audio prefix and audio embeddings"""
         preprocessed_audio = self.preprocess_audio(audio_paths, resample)
@@ -326,17 +328,17 @@ class PengiWrapper():
         preprocessed_text = self.preprocess_text(add_texts, enc_tok=False, add_text=True)
         addtext_embeddings = self._get_decoder_embeddings(preprocessed_text)
         return addtext_embeddings
-    
+
     def generate(self,audio_paths, text_prompts, add_texts, max_len, beam_size, temperature, stop_token, audio_resample=True):
         r"""Produces text response for the given audio file and text prompts
         audio_paths: (list<str>) List of audio file paths
-        text_prompts: (list<str>) List of text prompts corresponding to each audio in audio_paths. Refer to paper Table 1 and 11 for prompts and performance. 
+        text_prompts: (list<str>) List of text prompts corresponding to each audio in audio_paths. Refer to paper Table 1 and 11 for prompts and performance.
                                   The default recommendation is to "generate metadata" prompt
         add_texts: (list<str>) List of additionl text or context corresponding to each audio in audio_paths
         max_len: (int) maximum length for text generation. Necessary to stop generation if GPT2 gets "stuck" producing same token
         beam_size: (int) beam size for beam search decoding. Beam size of 3 or 5 leads to reasonly performance-computation tradeoff
         temperature: (float) temperature parameter for GPT2 generation
-        stop_token: (str) token used to stop text generation 
+        stop_token: (str) token used to stop text generation
         audio_resample (bool) True for resampling audio. The model support only 44.1 kHz
         """
         if not isinstance(audio_paths, list):
@@ -348,15 +350,15 @@ class PengiWrapper():
         length = len(audio_paths)
         if any(len(lst) != length for lst in [text_prompts, add_texts]):
             raise ValueError(f"The three inputs of audio, text and additional text should have same length")
-        
+
         if stop_token is None:
             stop_token = ' <|endoftext|>'
-        
+
         audio_prefix, _ = self.get_audio_embeddings(audio_paths, resample=audio_resample)
         prompt_prefix, _ = self.get_prompt_embeddings(text_prompts)
-        
+
         preds = []
-        for i in range(len(audio_paths)):
+        for i in trange(len(audio_paths)):
             if add_texts[i] == "" or add_texts[i] == None:
                 prefix_embed = torch.cat([audio_prefix[i],prompt_prefix[i]],axis=0)
             else:
@@ -365,28 +367,28 @@ class PengiWrapper():
             prefix_embed = prefix_embed.unsqueeze(0)
             pred = self._generate_beam(embed=prefix_embed, beam_size=beam_size, temperature=temperature, stop_token=stop_token, entry_length=max_len)
             preds.append(pred)
-        
+
         return preds
-    
+
     def describe(self, audio_paths, max_len, beam_size, temperature, stop_token, audio_resample=True):
         r"""Produces text description using the given audio file and predefined text prompts
         audio_paths: (list<str>) List of audio file paths
         max_len: (int) maximum length for text generation. Necessary to stop generation if GPT2 gets "stuck" producing same token
         beam_size: (int) beam size for beam search decoding. Beam size of 3 or 5 leads to reasonly performance-computation tradeoff
         temperature: (float) temperature parameter for GPT2 generation
-        stop_token: (str) token used to stop text generation 
+        stop_token: (str) token used to stop text generation
         audio_resample (bool) True for resampling audio. The model support only 44.1 kHz
         """
         if not isinstance(audio_paths, list):
             raise ValueError(f"The audio_paths is expected in list")
-        
+
         if stop_token is None:
             stop_token = ' <|endoftext|>'
-        
+
         text_prompts = ["generate audio caption", "generate metadata", "this is a sound of"]
         audio_prefix, _ = self.get_audio_embeddings(audio_paths, resample=audio_resample)
         prompt_prefix, _ = self.get_prompt_embeddings(text_prompts)
-        
+
         summaries = []
         for i in range(len(audio_paths)):
             preds = []
@@ -395,8 +397,8 @@ class PengiWrapper():
                 prefix_embed = prefix_embed.unsqueeze(0)
                 pred = self._generate_beam(embed=prefix_embed, beam_size=beam_size, temperature=temperature, stop_token=stop_token, entry_length=max_len)
                 preds.append(pred[0][0])
-            
+
             summary = preds[0] + preds[1] + 'this audio contains sound events: ' + preds[2][:-1] + '.'
             summaries.append(summary)
-        
+
         return summaries
