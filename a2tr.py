@@ -22,5 +22,8 @@ text_embeddings = torch.load("text_embeddings.pt")
 # torch.save(audio_captions_embeddings, "audio_captions_embeddings_beam5_size1.pt")
 audio_captions_embeddings = torch.load("audio_captions_embeddings_beam5_size1.pt")
 
+print(text_embeddings.shape)
+print(audio_captions_embeddings.shape)
+
 # 计算 Recall @ ks
 recall_atr_ks = compute_recall_at_k(audio_captions_embeddings, text_embeddings, ks)

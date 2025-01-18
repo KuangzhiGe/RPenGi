@@ -1,0 +1,488 @@
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+               Train horn               :                  Car                   
+    Train horn,Air horn, truck horn     :               Train horn               
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :               Train horn               
+    Train horn,Air horn, truck horn     :               Train horn               
+            Train horn,Train            :               Train horn               
+               Train horn               :                 Train                  
+               Train horn               :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :          Air horn, truck horn          
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+               Train horn               :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+    Train horn,Air horn, truck horn     :               Train horn               
+            Train horn,Train            :                 Train                  
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :               Train horn               
+            Train horn,Train            :               Train horn               
+                Air horn                :                  Car                   
+                Air horn                :          Civil defense siren           
+                Air horn                :          Civil defense siren           
+                Air horn                :          Air horn, truck horn          
+                Air horn                :          Civil defense siren           
+                Air horn                :                  Car                   
+                Air horn                :          Air horn, truck horn          
+                Air horn                :          Air horn, truck horn          
+                Air horn                :               Train horn               
+          Air horn, truck horn          :    Fire engine, fire truck (siren)     
+                Air horn                :                  Car                   
+                Air horn                :          Civil defense siren           
+                Air horn                :               Train horn               
+                Air horn                :          Air horn, truck horn          
+                Air horn                :          Air horn, truck horn          
+                Air horn                :          Air horn, truck horn          
+                Air horn                :           Police car (siren)           
+          Air horn, truck horn          :          Civil defense siren           
+Air horn, truck horn,Fire engine, fire truck (siren):           Police car (siren)           
+          Air horn, truck horn          :               Train horn               
+                Air horn                :          Civil defense siren           
+                Air horn                :               Train horn               
+                Air horn                :          Civil defense siren           
+                Air horn                :                  Car                   
+                Air horn                :                 Truck                  
+                Air horn                :          Air horn, truck horn          
+    Air horn, truck horn,Fire engine    :           Police car (siren)           
+               Car alarm                :          Air horn, truck horn          
+               Car alarm                :                  Car                   
+               Car alarm                :               Car alarm                
+            Car alarm,Truck             :               Car alarm                
+             Car alarm,Car              :               Car alarm                
+               Car alarm                :               Car alarm                
+               Car alarm                :               Car alarm                
+      Car alarm,Police car (siren)      :                 Train                  
+               Car alarm                :          Air horn, truck horn          
+               Car alarm                :               Motorcycle               
+      Car alarm,Police car (siren)      :               Train horn               
+             Car alarm,Car              :          Air horn, truck horn          
+               Car alarm                :                  Car                   
+               Car alarm                :               Motorcycle               
+               Car alarm                :               Motorcycle               
+               Car alarm                :                  Car                   
+             Car alarm,Car              :               Motorcycle               
+      Car alarm,Ambulance (siren)       :                  Car                   
+             Car alarm,Car              :                  Car                   
+               Car alarm                :                  Car                   
+               Car alarm                :                  Car                   
+               Car alarm                :                  Car                   
+               Car alarm                :                  Car                   
+      Car alarm,Car,Car passing by      :                  Bus                   
+               Car alarm                :               Train horn               
+             Car alarm,Car              :               Motorcycle               
+               Car alarm                :          Air horn, truck horn          
+               Car alarm                :               Motorcycle               
+               Car alarm                :          Civil defense siren           
+               Car alarm                :               Car alarm                
+         Reversing beeps,Truck          :                  Bus                   
+            Reversing beeps             :               Car alarm                
+            Reversing beeps             :                 Truck                  
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :          Air horn, truck horn          
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :                 Truck                  
+            Reversing beeps             :             Car passing by             
+            Reversing beeps             :          Air horn, truck horn          
+         Reversing beeps,Truck          :          Air horn, truck horn          
+            Reversing beeps             :               Motorcycle               
+         Reversing beeps,Truck          :                 Truck                  
+            Reversing beeps             :                 Truck                  
+            Reversing beeps             :                  Car                   
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :               Motorcycle               
+         Reversing beeps,Truck          :                  Car                   
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :                 Truck                  
+            Reversing beeps             :                  Car                   
+          Reversing beeps,Car           :                  Car                   
+            Reversing beeps             :                  Bus                   
+         Reversing beeps,Truck          :               Train horn               
+         Reversing beeps,Truck          :                 Truck                  
+         Reversing beeps,Truck          :                  Car                   
+            Reversing beeps             :                  Car                   
+            Reversing beeps             :               Motorcycle               
+         Reversing beeps,Truck          :                  Car                   
+                Bicycle                 :                  Car                   
+                Bicycle                 :                  Car                   
+                Bicycle                 :                  Bus                   
+                Bicycle                 :               Motorcycle               
+                Bicycle                 :                  Car                   
+                Bicycle                 :                  Bus                   
+                Bicycle                 :                  Bus                   
+                Bicycle                 :                  Bus                   
+                Bicycle                 :               Train horn               
+                Bicycle                 :             Car passing by             
+                Bicycle                 :                  Bus                   
+                Bicycle                 :               Train horn               
+                Bicycle                 :               Motorcycle               
+                Bicycle                 :             Car passing by             
+                Bicycle                 :                  Bus                   
+                Bicycle                 :                 Train                  
+                Bicycle                 :                  Car                   
+                Bicycle                 :             Car passing by             
+                Bicycle                 :                  Bus                   
+                Bicycle                 :                  Bus                   
+                Bicycle                 :                  Car                   
+                Bicycle                 :                  Car                   
+                Bicycle                 :                Bicycle                 
+                Bicycle                 :                 Train                  
+                Bicycle                 :               Motorcycle               
+                Bicycle                 :               Motorcycle               
+                Bicycle                 :                  Bus                   
+                Bicycle                 :               Motorcycle               
+                Bicycle                 :                  Car                   
+                Bicycle                 :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                  Car                   
+               Skateboard               :                  Bus                   
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                  Bus                   
+               Skateboard               :               Motorcycle               
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+               Skateboard               :               Skateboard               
+               Skateboard               :                 Train                  
+               Skateboard               :                  Car                   
+           Ambulance (siren)            :           Ambulance (siren)            
+           Ambulance (siren)            :           Ambulance (siren)            
+           Ambulance (siren)            :           Ambulance (siren)            
+           Ambulance (siren)            :               Train horn               
+        Ambulance (siren),Truck         :           Ambulance (siren)            
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+  Ambulance (siren),Police car (siren)  :          Civil defense siren           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :          Civil defense siren           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+Ambulance (siren),Fire engine, fire truck (siren):           Ambulance (siren)            
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Ambulance (siren)            
+           Ambulance (siren)            :           Ambulance (siren)            
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :           Police car (siren)           
+           Ambulance (siren)            :               Screaming                
+           Ambulance (siren)            :          Air horn, truck horn          
+           Ambulance (siren)            :          Civil defense siren           
+           Ambulance (siren)            :               Motorcycle               
+     Ambulance (siren),Fire engine      :           Police car (siren)           
+     Ambulance (siren),Fire engine      :    Fire engine, fire truck (siren)     
+           Ambulance (siren)            :           Police car (siren)           
+Ambulance (siren),Police car (siren),Car:           Police car (siren)           
+  Ambulance (siren),Police car (siren)  :           Police car (siren)           
+              Fire engine               :           Ambulance (siren)            
+    Fire engine, fire truck (siren)     :                  Car                   
+    Fire engine, fire truck (siren)     :           Police car (siren)           
+    Fire engine, fire truck (siren)     :           Police car (siren)           
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+              Fire engine               :           Police car (siren)           
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+    Fire engine, fire truck (siren)     :           Police car (siren)           
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+              Fire engine               :           Police car (siren)           
+              Fire engine               :           Police car (siren)           
+              Fire engine               :                 Truck                  
+              Fire engine               :           Ambulance (siren)            
+              Fire engine               :           Police car (siren)           
+              Fire engine               :           Ambulance (siren)            
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+              Fire engine               :           Police car (siren)           
+    Fire engine, fire truck (siren)     :          Civil defense siren           
+              Fire engine               :          Civil defense siren           
+  Fire engine, fire truck (siren),Car   :           Police car (siren)           
+              Fire engine               :             Car passing by             
+              Fire engine               :           Police car (siren)           
+              Fire engine               :          Civil defense siren           
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+              Fire engine               :                 Train                  
+              Fire engine               :           Police car (siren)           
+    Fire engine, fire truck (siren)     :    Fire engine, fire truck (siren)     
+              Fire engine               :           Ambulance (siren)            
+              Fire engine               :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :                  Car                   
+          Civil defense siren           :               Train horn               
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :           Ambulance (siren)            
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :               Train horn               
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :                  Car                   
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+Civil defense siren,Fire engine, fire truck (siren):           Police car (siren)           
+          Civil defense siren           :          Civil defense siren           
+          Civil defense siren           :          Civil defense siren           
+         Police car (siren),Car         :                 Truck                  
+           Police car (siren)           :          Civil defense siren           
+      Police car (siren),Truck,Car      :           Ambulance (siren)            
+           Police car (siren)           :                  Car                   
+         Police car (siren),Car         :           Police car (siren)           
+           Police car (siren)           :           Ambulance (siren)            
+           Police car (siren)           :           Police car (siren)           
+           Police car (siren)           :           Ambulance (siren)            
+           Police car (siren)           :          Civil defense siren           
+           Police car (siren)           :           Police car (siren)           
+         Police car (siren),Car         :           Police car (siren)           
+           Police car (siren)           :           Police car (siren)           
+         Police car (siren),Car         :             Car passing by             
+           Police car (siren)           :          Civil defense siren           
+           Police car (siren)           :           Police car (siren)           
+           Police car (siren)           :           Police car (siren)           
+           Police car (siren)           :           Ambulance (siren)            
+           Police car (siren)           :                  Car                   
+           Police car (siren)           :           Police car (siren)           
+           Police car (siren)           :          Civil defense siren           
+           Police car (siren)           :           Ambulance (siren)            
+   Police car (siren),Car passing by    :                  Bus                   
+           Police car (siren)           :           Ambulance (siren)            
+           Police car (siren)           :          Civil defense siren           
+           Police car (siren)           :                  Car                   
+           Police car (siren)           :           Police car (siren)           
+               Screaming                :           Police car (siren)           
+               Screaming                :                  Bus                   
+               Screaming                :               Motorcycle               
+               Screaming                :                  Bus                   
+               Screaming                :                 Train                  
+               Screaming                :          Air horn, truck horn          
+               Screaming                :           Ambulance (siren)            
+               Screaming                :               Train horn               
+               Screaming                :           Police car (siren)           
+               Screaming                :                  Car                   
+               Screaming                :                 Train                  
+               Screaming                :               Screaming                
+               Screaming                :               Train horn               
+               Screaming                :                 Train                  
+               Screaming                :               Screaming                
+               Screaming                :           Police car (siren)           
+               Screaming                :               Screaming                
+               Screaming                :                 Truck                  
+               Screaming                :                  Bus                   
+               Screaming                :           Police car (siren)           
+               Screaming                :                  Car                   
+               Screaming                :               Screaming                
+               Screaming                :               Screaming                
+               Screaming                :           Police car (siren)           
+               Screaming                :               Skateboard               
+               Screaming                :                  Car                   
+               Screaming                :               Motorcycle               
+               Screaming                :                 Train                  
+               Screaming                :             Car passing by             
+               Screaming                :               Train horn               
+           Car,Car passing by           :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+           Car,Car passing by           :               Motorcycle               
+                  Car                   :                  Bus                   
+                  Car                   :                  Bus                   
+                  Car                   :                  Car                   
+                  Car                   :                 Truck                  
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+           Car,Car passing by           :               Motorcycle               
+                  Car                   :                  Car                   
+           Car,Car passing by           :           Ambulance (siren)            
+                  Car                   :                  Car                   
+                  Car                   :               Motorcycle               
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+           Car,Car passing by           :          Civil defense siren           
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :                 Train                  
+                  Car                   :                  Car                   
+                  Car                   :                  Car                   
+                  Car                   :               Train horn               
+           Car,Car passing by           :           Police car (siren)           
+             Car passing by             :                 Train                  
+             Car passing by             :                  Car                   
+             Car passing by             :               Motorcycle               
+           Car passing by,Car           :               Motorcycle               
+           Car passing by,Car           :          Air horn, truck horn          
+             Car passing by             :                  Car                   
+             Car passing by             :                  Bus                   
+           Car passing by,Car           :             Car passing by             
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Car                   
+             Car passing by             :                 Train                  
+             Car passing by             :                  Car                   
+           Car passing by,Car           :               Motorcycle               
+           Car passing by,Car           :             Car passing by             
+           Car passing by,Car           :                 Truck                  
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :               Train horn               
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Car                   
+           Car passing by,Car           :                  Bus                   
+             Car passing by             :               Motorcycle               
+                  Bus                   :               Motorcycle               
+                  Bus                   :                 Truck                  
+                  Bus                   :                  Bus                   
+                  Bus                   :                  Bus                   
+                  Bus                   :                  Bus                   
+                  Bus                   :                 Truck                  
+                  Bus                   :                 Truck                  
+                  Bus                   :             Car passing by             
+                  Bus                   :                  Car                   
+                  Bus                   :                  Bus                   
+                  Bus                   :               Motorcycle               
+                  Bus                   :                 Train                  
+                  Bus                   :                  Car                   
+                  Bus                   :                  Bus                   
+                  Bus                   :                 Truck                  
+                  Bus                   :          Air horn, truck horn          
+                  Bus                   :               Motorcycle               
+                  Bus                   :               Train horn               
+                  Bus                   :                 Truck                  
+                  Bus                   :             Car passing by             
+                  Bus                   :    Fire engine, fire truck (siren)     
+                  Bus                   :             Car passing by             
+                  Bus                   :               Train horn               
+                  Bus                   :                  Car                   
+                  Bus                   :               Train horn               
+                  Bus                   :             Car passing by             
+                  Bus                   :               Train horn               
+                  Bus                   :               Motorcycle               
+                  Bus                   :                 Train                  
+                  Bus                   :                 Train                  
+                 Truck                  :               Motorcycle               
+                 Truck                  :               Motorcycle               
+                 Truck                  :               Screaming                
+                 Truck                  :                  Bus                   
+                 Truck                  :                  Car                   
+                 Truck                  :           Police car (siren)           
+                 Truck                  :                  Car                   
+                 Truck                  :               Motorcycle               
+                 Truck                  :                 Train                  
+                 Truck                  :                 Truck                  
+                 Truck                  :               Motorcycle               
+                 Truck                  :               Motorcycle               
+                 Truck                  :               Motorcycle               
+                 Truck                  :                 Truck                  
+                 Truck                  :                  Bus                   
+                 Truck                  :                  Car                   
+                 Truck                  :               Motorcycle               
+                 Truck                  :                  Car                   
+                 Truck                  :               Motorcycle               
+                 Truck                  :                 Truck                  
+                 Truck                  :                  Bus                   
+                 Truck                  :                  Car                   
+                 Truck                  :                 Truck                  
+                 Truck                  :                  Car                   
+                 Truck                  :                 Truck                  
+                 Truck                  :                 Train                  
+                 Truck                  :                 Truck                  
+                 Truck                  :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Bus                   
+               Motorcycle               :                 Train                  
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                 Truck                  
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Train horn               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :               Motorcycle               
+               Motorcycle               :                  Car                   
+               Motorcycle               :               Motorcycle               
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                  Car                   
+                 Train                  :             Car passing by             
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :    Fire engine, fire truck (siren)     
+                 Train                  :               Motorcycle               
+                 Train                  :                 Train                  
+                 Train                  :                  Car                   
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :                  Car                   
+                 Train                  :                 Train                  
+                 Train                  :                  Bus                   
+                 Train                  :                  Bus                   
+                 Train                  :               Train horn               
+                 Train                  :                 Train                  
+                 Train                  :                 Train                  
+                 Train                  :               Train horn               
