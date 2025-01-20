@@ -1,3 +1,21 @@
+# Division of Tasks
+
+## Kuangzhi Ge
+
+1. Organizing the original paper's code
+
+2. Replicating audio cationing task and text2audio retrieval task
+
+3. Experiments and result analysis on the improvement of the Rethinking module
+
+## Yiyang Tian
+
+1. Dataset collection and organization
+
+2. Replicating AQA task and all close-ended tasks except for the text2audio retrieval task
+
+3. Experiments and result analysis on the improvement of the text encoder
+
 # Model Checkpoint
 
 You can find the model's checkpoint in the link to the Peking University cloud drive below. It needs to be placed in the "configs" folder.
